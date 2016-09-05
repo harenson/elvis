@@ -61,7 +61,7 @@ option_spec_list() ->
      {code_path, $p, "code-path", string, "Add the directory in the code path."}
     ].
 
--spec process_options([atom()], [string()]) -> ok.
+-spec process_options([binary()], [string()]) -> ok.
 process_options(Options, Commands) ->
     try
         Config = elvis_config:default(),
